@@ -470,9 +470,12 @@ console.log(fruits); // ["apple", "banana", "orange", "grape"]
 
 ##### HTML
 
-HTML은 HyperText Markup Language의 약자로, 웹 페이지의 구조와 내용을 정의합니다. HTML은 태그를 사용하여 내용을 구성하며, 각 태그는 브라우저에게 어떤 종류의 내용인지 알려줍니다. 예를 들어, `<h1>` 태그는 제목을 나타내며, `<p>` 태그는 단락을 나타냅니다.
+HTML은 HyperText Markup Language의 약자로, 웹 페이지의 구조와 내용을 정의합니다. 
+HTML은 태그를 사용하여 내용을 구성하며, 각 태그는 브라우저에게 어떤 종류의 내용인지 알려줍니다. 
+예를 들어, `<h1>` 태그는 제목을 나타내며, `<p>` 태그는 단락을 나타냅니다.
 
 ```html
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -483,15 +486,20 @@ HTML은 HyperText Markup Language의 약자로, 웹 페이지의 구조와 내�
 	<p>This is my first web page.</p>
 </body>
 </html>
+
 ```
 
-위 코드에서 `<!DOCTYPE html>`은 현재 문서가 HTML5로 작성되었음을 브라우저에게 알려주는 선언문입니다. `<html>` 태그는 HTML 문서의 루트 요소이며, `<head>` 태그는 문서의 메타 데이터를 정의합니다. `<body>` 태그는 실제 문서 내용을 정의합니다.
+위 코드에서 `<!DOCTYPE html>`은 현재 문서가 HTML5로 작성되었음을 
+브라우저에게 알려주는 선언문입니다. `<html>` 태그는 HTML 문서의 루트 요소이며, 
+`<head>` 태그는 문서의 메타 데이터를 정의합니다. `<body>` 태그는 실제 문서 내용을 정의합니다.
 
 ##### CSS
 
-CSS는 Cascading Style Sheets의 약자로, HTML 문서에 스타일을 적용하는 데 사용됩니다. CSS는 HTML 문서의 태그를 선택하고 스타일을 지정하는 규칙을 정의합니다.
+CSS는 Cascading Style Sheets의 약자로, HTML 문서에 스타일을 적용하는 데 사용됩니다. 
+CSS는 HTML 문서의 태그를 선택하고 스타일을 지정하는 규칙을 정의합니다.
 
 ```html
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -510,15 +518,22 @@ CSS는 Cascading Style Sheets의 약자로, HTML 문서에 스타일을 적용�
 	<p>This is my first web page.</p>
 </body>
 </html>
+
 ```
 
-위 코드에서 `<style>` 태그는 문서 내에서 스타일 규칙을 정의합니다. `h1` 태그에는 파란색 글씨 색상이 지정되어 있으며, `p` 태그에는 글꼴 크기가 18픽셀로 지정되어 있습니다.
+위 코드에서 `<style>` 태그는 문서 내에서 스타일 규칙을 정의합니다.
+ `h1` 태그에는 파란색 글씨 색상이 지정되어 있으며, `p` 태그에는 글꼴 크기가 
+18픽셀로 지정되어 있습니다.
 
 ##### DOM
 
-DOM은 Document Object Model의 약자로, 웹 페이지를 나타내는 계층 구조 모델입니다. HTML 문서는 트리 구조로 구성되어 있으며, DOM은 이 구조를 표현합니다. 각 HTML 태그는 DOM에서 노드로 표현됩니다. DOM은 JavaScript를 사용하여 동적으로 수정할 수 있습니다.
+DOM은 Document Object Model의 약자로, 웹 페이지를 나타내는 계층 구조 모델입니다.
+HTML 문서는 트리 구조로 구성되어 있으며, DOM은 이 구조를 표현합니다. 
+각 HTML 태그는 DOM에서 노드로 표현됩니다. 
+DOM은 JavaScript를 사용하여 동적으로 수정할 수 있습니다.
 
 ```html
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -542,22 +557,29 @@ DOM은 Document Object Model의 약자로, 웹 페이지를 나타내는 계층 
 	</script>
 </body>
 </html>
+
 ```
 
 위 코드에서 `<script>` 태그는 JavaScript 코드를 정의합니다.
 
 
+DOM은 Document Object Model의 약자로, 웹 페이지를 나타내는 계층 구조 모델입니다. 
+HTML 문서는 트리 구조로 구성되어 있으며, DOM은 이 구조를 표현합니다. 
+각 HTML 태그는 DOM에서 노드로 표현됩니다. DOM은 JavaScript를 사용하여 동적으로 수정할 수 있습니다.
 
+DOM은 브라우저에 의해 자동으로 생성되며, 이를 사용하여 HTML 문서의 요소에 
+접근하고 수정할 수 있습니다. JavaScript를 사용하여 DOM을 조작하면, 
+페이지를 동적으로 업데이트하고, 사용자와 상호작용할 수 있는 인터페이스를 만들 수 있습니다.
 
-DOM은 Document Object Model의 약자로, 웹 페이지를 나타내는 계층 구조 모델입니다. HTML 문서는 트리 구조로 구성되어 있으며, DOM은 이 구조를 표현합니다. 각 HTML 태그는 DOM에서 노드로 표현됩니다. DOM은 JavaScript를 사용하여 동적으로 수정할 수 있습니다.
+DOM은 여러 종류의 노드로 구성됩니다. HTML 문서의 각 요소는 노드로 표현되며, 
+노드는 다음과 같은 종류로 구성됩니다.
 
-DOM은 브라우저에 의해 자동으로 생성되며, 이를 사용하여 HTML 문서의 요소에 접근하고 수정할 수 있습니다. JavaScript를 사용하여 DOM을 조작하면, 페이지를 동적으로 업데이트하고, 사용자와 상호작용할 수 있는 인터페이스를 만들 수 있습니다.
-
-DOM은 여러 종류의 노드로 구성됩니다. HTML 문서의 각 요소는 노드로 표현되며, 노드는 다음과 같은 종류로 구성됩니다.
-
-- 요소 노드 (Element Node): HTML 요소를 나타냅니다. 예를 들어 `<h1>`, `<p>`, `<div>` 등의 요소가 있습니다.
-- 속성 노드 (Attribute Node): HTML 요소의 속성을 나타냅니다. 예를 들어 `<img src="example.png">` 요소의 src 속성이 속성 노드입니다.
-- 텍스트 노드 (Text Node): HTML 요소의 텍스트 내용을 나타냅니다. 예를 들어 `<p>Hello, world!</p>` 요소의 "Hello, world!" 부분이 텍스트 노드입니다.
+- 요소 노드 (Element Node): HTML 요소를 나타냅니다. 
+  예를 들어 `<h1>`, `<p>`, `<div>` 등의 요소가 있습니다.
+- 속성 노드 (Attribute Node): HTML 요소의 속성을 나타냅니다. 
+  예를 들어 `<img src="example.png">` 요소의 src 속성이 속성 노드입니다.
+- 텍스트 노드 (Text Node): HTML 요소의 텍스트 내용을 나타냅니다. 
+  예를 들어 `<p>Hello, world!</p>` 요소의 "Hello, world!" 부분이 텍스트 노드입니다.
 
 JavaScript를 사용하여 DOM에 접근하는 방법은 다음과 같습니다.
 
@@ -584,18 +606,28 @@ DOM을 조작하는 것은 웹 개발에서 중요한 부분 중 하나
 DOM을 조작하기 위한 메서드는 다양합니다. 몇 가지 메서드와 이벤트 핸들링에 대해 설명해 보겠습니다.
 
 1. `document.getElementById()`: 지정된 ID를 가진 요소를 반환합니다.
+
 ```javascript
+
 const element = document.getElementById("myId");
+
 ```
 
 2. `document.querySelector()`: CSS 선택자를 사용하여 요소를 찾습니다.
+
 ```javascript
+
 const element = document.querySelector(".myClass");
+
 ```
 
+
 3. `element.innerHTML`: 요소의 내부 HTML을 변경합니다.
+
 ```javascript
+
 document.getElementById("myId").innerHTML = "새로운 내용";
+
 ```
 
 4. `element.style.property`: 요소의 스타일을 변경합니다.
@@ -604,21 +636,29 @@ document.getElementById("myId").style.color = "red";
 ```
 
 5. `element.setAttribute()`: 지정된 속성과 값을 가진 요소를 설정합니다.
+
 ```javascript
+
 document.getElementById("myId").setAttribute("src", "newImage.png");
+
 ```
 
 6. `element.addEventListener()`: 이벤트 리스너를 등록합니다.
+
 ```javascript
+
 document.getElementById("myButton").addEventListener("click", function() {
   console.log("버튼 클릭됨");
 });
+
 ```
 
 이벤트 핸들링은 사용자와 상호작용하는 웹 페이지에서 매우 중요합니다. 이벤트 핸들러는 이벤트가 발생할 때 실행됩니다. 몇 가지 일반적인 이벤트 핸들러 예제를 살펴보겠습니다.
 
 1. `click`: 요소를 클릭할 때 실행됩니다.
+
 ```javascript
+
 document.getElementById("myButton").addEventListener("click", function() {
   console.log("버튼 클릭됨");
 });
@@ -626,64 +666,114 @@ document.getElementById("myButton").addEventListener("click", function() {
 
 2. `mouseover`: 요소 위로 마우스 커서를 이동할 때 실행됩니다.
 ```javascript
+
 document.getElementById("myElement").addEventListener("mouseover", function() {
   console.log("마우스가 위로 이동됨");
 });
+
 ```
 
 3. `keydown`: 키를 누를 때 실행됩니다.
 ```javascript
+
 document.addEventListener("keydown", function(event) {
   console.log("키가 눌렸습니다.");
 });
+
 ```
 
-이벤트 핸들러는 보통 익명 함수로 작성됩니다. 이벤트 핸들러는 콜백 함수처럼 동작하며, 이벤트가 발생하면 실행됩니다. 이벤트 객체에는 이벤트에 대한 정보가 포함되어 있습니다. 이를 사용하여 이벤트 핸들러에서 추가적인 작업을 수행할 수 있습니다.
+이벤트 핸들러는 보통 익명 함수로 작성됩니다. 이벤트 핸들러는 콜백 함수처럼 동작하며, 
+이벤트가 발생하면 실행됩니다. 이벤트 객체에는 이벤트에 대한 정보가 포함되어 있습니다. 
+이를 사용하여 이벤트 핸들러에서 추가적인 작업을 수행할 수 있습니다.
 
 
 
 
-이벤트 버블링과 캡처링은 DOM에서 이벤트 전파 방식을 뜻합니다. 이벤트가 발생한 요소에서 시작하여 상위 요소로 전파됩니다.
+이벤트 버블링과 캡처링은 DOM에서 이벤트 전파 방식을 뜻합니다. 
+이벤트가 발생한 요소에서 시작하여 상위 요소로 전파됩니다.
 
-이벤트 버블링은 이벤트가 발생한 요소에서 시작하여 상위 요소로 전파되는 방식입니다. 예를 들어, 다음과 같은 HTML 코드가 있다고 가정해 봅시다.
+이벤트 버블링은 이벤트가 발생한 요소에서 시작하여 상위 요소로 전파되는 방식입니다. 
+예를 들어, 다음과 같은 HTML 코드가 있다고 가정해 봅시다.
+
 ```html
+
 <div id="outer">
   <div id="inner">
     버튼
   </div>
 </div>
+
 ```
-버튼을 클릭하면 이벤트가 발생하고, 이벤트는 버튼에서 시작하여 상위 요소인 `#inner`와 `#outer` 요소로 전파됩니다.
+버튼을 클릭하면 이벤트가 발생하고, 이벤트는 버튼에서 시작하여 
+상위 요소인 `#inner`와 `#outer` 요소로 전파됩니다.
 
-반면, 이벤트 캡처링은 상위 요소에서 시작하여 이벤트가 발생한 요소로 전파되는 방식입니다. 이벤트 캡처링은 이벤트 버블링과 반대로 작동합니다.
+반면, 이벤트 캡처링은 상위 요소에서 시작하여 이벤트가 발생한 요소로 전파되는 방식입니다. 
+이벤트 캡처링은 이벤트 버블링과 반대로 작동합니다.
 
-DOM에서 이벤트 전파 방식은 기본적으로 이벤트 버블링을 따릅니다. 이벤트 핸들러가 등록된 요소에서 이벤트가 발생하면, 이벤트는 해당 요소에서 시작하여 상위 요소로 전파됩니다.
+DOM에서 이벤트 전파 방식은 기본적으로 이벤트 버블링을 따릅니다. 
+이벤트 핸들러가 등록된 요소에서 이벤트가 발생하면, 
+이벤트는 해당 요소에서 시작하여 상위 요소로 전파됩니다.
 
-이벤트 전파 방식을 변경하려면 `addEventListener()` 메서드의 세 번째 인수를 사용합니다. 이 인수를 `true`로 설정하면 이벤트 캡처링이 적용됩니다. `false`로 설정하면 이벤트 버블링이 적용됩니다. 예를 들어, 다음과 같은 코드를 사용하여 이벤트 캡처링을 적용할 수 있습니다.
+이벤트 전파 방식을 변경하려면 `addEventListener()` 메서드의 세 번째 인수를 사용합니다. 
+이 인수를 `true`로 설정하면 이벤트 캡처링이 적용됩니다. `false`로 설정하면 이벤트 버블링이 적용됩니다. 
+예를 들어, 다음과 같은 코드를 사용하여 이벤트 캡처링을 적용할 수 있습니다.
+
 ```javascript
+
 document.getElementById("myButton").addEventListener("click", function() {
   console.log("버튼 클릭됨");
 }, true);
+
 ```
 
 
-HTTP(HyperText Transfer Protocol)는 인터넷에서 데이터를 주고받기 위한 프로토콜입니다. HTTP 요청(Request)과 응답(Response)은 HTTP 프로토콜에서 가장 기본적인 개념 중 하나입니다.
+HTTP(HyperText Transfer Protocol)는 인터넷에서 데이터를 주고받기 위한 프로토콜입니다. 
+HTTP 요청(Request)과 응답(Response)은 HTTP 프로토콜에서 가장 기본적인 개념 중 하나입니다.
 
-HTTP 요청은 클라이언트가 서버에게 데이터를 요청하는 것입니다. HTTP 요청은 메서드, URL, 헤더, 본문으로 구성됩니다. 메서드는 요청하는 동작을 나타내는 문자열입니다. 예를 들어, GET 메서드는 서버로부터 데이터를 가져오는 요청을 나타냅니다. POST 메서드는 서버에 데이터를 전송하는 요청을 나타냅니다. URL은 요청 대상의 주소를 나타냅니다. 헤더는 요청에 대한 부가 정보를 포함하며, 키-값 쌍의 형태로 구성됩니다. 본문은 요청에 대한 추가적인 정보나 데이터를 포함합니다.
+HTTP 요청은 클라이언트가 서버에게 데이터를 요청하는 것입니다. 
 
-HTTP 응답은 서버가 클라이언트에게 데이터를 전송하는 것입니다. HTTP 응답은 상태 코드, 헤더, 본문으로 구성됩니다. 상태 코드는 서버의 처리 결과를 나타내는 세 자리 숫자입니다. 예를 들어, 200은 성공적인 응답을 나타내는 코드입니다. 404는 요청한 페이지를 찾을 수 없음을 나타내는 코드입니다. 헤더는 응답에 대한 부가 정보를 포함하며, 키-값 쌍의 형태로 구성됩니다. 본문은 서버가 클라이언트에게 전송하는 데이터를 포함합니다.
+HTTP 요청은 메서드, URL, 헤더, 본문으로 구성됩니다. 
+메서드는 요청하는 동작을 나타내는 문자열입니다. 예를 들어, GET 메서드는 서버로부터 
+데이터를 가져오는 요청을 나타냅니다. POST 메서드는 서버에 데이터를 전송하는 요청을 나타냅니다. 
+URL은 요청 대상의 주소를 나타냅니다. 
+헤더는 요청에 대한 부가 정보를 포함하며, 키-값 쌍의 형태로 구성됩니다. 
+본문은 요청에 대한 추가적인 정보나 데이터를 포함합니다.
 
-HTTP 요청과 응답은 클라이언트와 서버 간의 통신에서 가장 기본적인 개념입니다. 이를 통해 클라이언트는 서버에서 데이터를 가져오거나 서버에 데이터를 전송할 수 있습니다. 요청과 응답의 형식은 HTTP 프로토콜에서 정의되며, 이를 기반으로 다양한 웹 서비스나 애플리케이션에서 데이터를 전송하고 받을 수 있습니다.
+HTTP 응답은 서버가 클라이언트에게 데이터를 전송하는 것입니다. 
+HTTP 응답은 상태 코드, 헤더, 본문으로 구성됩니다. 상태 코드는 서버의 처리 결과를 
+나타내는 세 자리 숫자입니다. 예를 들어, 200은 성공적인 응답을 나타내는 코드입니다. 
+404는 요청한 페이지를 찾을 수 없음을 나타내는 코드입니다. 
+
+헤더는 응답에 대한 부가 정보를 포함하며, 키-값 쌍의 형태로 구성됩니다. 
+본문은 서버가 클라이언트에게 전송하는 데이터를 포함합니다.
+
+HTTP 요청과 응답은 클라이언트와 서버 간의 통신에서 가장 기본적인 개념입니다. 
+이를 통해 클라이언트는 서버에서 데이터를 가져오거나 서버에 데이터를 전송할 수 있습니다. 
+요청과 응답의 형식은 HTTP 프로토콜에서 정의되며, 이를 기반으로 다양한 웹 서비스나 
+애플리케이션에서 데이터를 전송하고 받을 수 있습니다.
 
 
 
-Ajax(Asynchronous JavaScript and XML)는 비동기적으로 웹 서버와 브라우저가 데이터를 주고받는 기술입니다. Ajax를 사용하면 페이지를 새로 고치지 않고도 데이터를 받아와 화면을 갱신할 수 있습니다. Ajax는 XML 대신에 JSON, HTML, 일반 텍스트 등 다양한 데이터 형식을 사용할 수 있습니다.
+Ajax(Asynchronous JavaScript and XML)는 비동기적으로 
+웹 서버와 브라우저가 데이터를 주고받는 기술입니다. 
+Ajax를 사용하면 페이지를 새로 고치지 않고도 데이터를 받아와 화면을 갱신할 수 있습니다.
+Ajax는 XML 대신에 JSON, HTML, 일반 텍스트 등 다양한 데이터 형식을 사용할 수 있습니다.
 
-Ajax 요청은 XMLHttpRequest 객체를 사용하여 처리합니다. 이 객체는 브라우저가 제공하는 API로, JavaScript 코드에서 Ajax 요청을 생성하고 서버에 전송하는 데 사용됩니다. Ajax 요청은 비동기적으로 처리되며, 요청과 응답이 독립적으로 처리됩니다. 이를 통해 사용자는 다른 작업을 수행하면서도 웹 페이지가 업데이트될 수 있습니다.
+Ajax 요청은 XMLHttpRequest 객체를 사용하여 처리합니다. 
+이 객체는 브라우저가 제공하는 API로, JavaScript 코드에서 Ajax 요청을 생성하고 
+서버에 전송하는 데 사용됩니다. Ajax 요청은 비동기적으로 처리되며, 
+요청과 응답이 독립적으로 처리됩니다. 이를 통해 사용자는 다른 작업을 수행하면서도 
+웹 페이지가 업데이트될 수 있습니다.
 
-Ajax 응답 처리는 XMLHttpRequest 객체를 사용하여 처리합니다. 서버가 보낸 데이터는 XMLHttpRequest 객체의 responseText나 responseXML 프로퍼티를 통해 접근할 수 있습니다. 이 데이터는 JavaScript 객체나 배열로 변환하여 화면에 표시할 수 있습니다. Ajax 응답은 비동기적으로 처리되므로, 데이터가 로드되기 전에도 화면을 갱신할 수 있습니다.
+Ajax 응답 처리는 XMLHttpRequest 객체를 사용하여 처리합니다. 
+서버가 보낸 데이터는 XMLHttpRequest 객체의 responseText나 responseXML 
+프로퍼티를 통해 접근할 수 있습니다. 이 데이터는 JavaScript 객체나 배열로 변환하여 
+화면에 표시할 수 있습니다. Ajax 응답은 비동기적으로 처리되므로, 
+데이터가 로드되기 전에도 화면을 갱신할 수 있습니다.
 
-Ajax를 사용하면 웹 페이지를 새로 고치지 않고도 데이터를 받아와 화면을 갱신할 수 있습니다. 이를 통해 사용자는 더 나은 사용자 경험을 제공받을 수 있으며, 웹 애플리케이션의 성능을 향상시킬 수 있습니다.
+Ajax를 사용하면 웹 페이지를 새로 고치지 않고도 데이터를 받아와 화면을 갱신할 수 있습니다. 
+이를 통해 사용자는 더 나은 사용자 경험을 제공받을 수 있으며, 
+웹 애플리케이션의 성능을 향상시킬 수 있습니다.
 
 
 
@@ -692,6 +782,7 @@ Ajax를 사용하면 웹 페이지를 새로 고치지 않고도 데이터를 �
 Ajax 요청 처리 예시:
 
 ```javascript
+
 const xhr = new XMLHttpRequest();
 
 xhr.open('GET', 'https://example.com/data');
@@ -702,13 +793,19 @@ xhr.onreadystatechange = function() {
 };
 
 xhr.send();
+
 ```
 
-위 코드에서는 XMLHttpRequest 객체를 생성하고, open 메서드를 사용하여 GET 요청을 생성합니다. 이후 onreadystatechange 이벤트를 등록하여 서버 응답이 도착하면 콜백 함수를 실행합니다. 이때 readyState 프로퍼티가 4이고 status 프로퍼티가 200일 때, 서버 응답 데이터를 콘솔에 출력합니다.
+위 코드에서는 XMLHttpRequest 객체를 생성하고, 
+open 메서드를 사용하여 GET 요청을 생성합니다. 이후 onreadystatechange 이벤트를 등록하여 
+서버 응답이 도착하면 콜백 함수를 실행합니다. 이때 readyState 프로퍼티가 4이고 status 프로퍼티가 200일 때, 
+서버 응답 데이터를 콘솔에 출력합니다.
 
 Ajax 응답 처리 예시:
 
-```javascript
+
+```javascrip
+
 const xhr = new XMLHttpRequest();
 
 xhr.open('GET', 'https://example.com/data');
@@ -726,29 +823,45 @@ xhr.onreadystatechange = function() {
 };
 
 xhr.send();
+
 ```
 
-위 코드에서는 XMLHttpRequest 객체를 생성하고, open 메서드를 사용하여 GET 요청을 생성합니다. 이후 onreadystatechange 이벤트를 등록하여 서버 응답이 도착하면 콜백 함수를 실행합니다. 이때 readyState 프로퍼티가 4이고 status 프로퍼티가 200일 때, 서버 응답 데이터를 JavaScript 객체로 변환하고, 이를 화면에 표시합니다. 이 예시에서는 응답 데이터가 배열 형태로 전달되었으며, forEach 메서드를 사용하여 각각의 아이템을 리스트 아이템으로 생성하여 화면에 추가합니다.
+위 코드에서는 XMLHttpRequest 객체를 생성하고,
+open 메서드를 사용하여 GET 요청을 생성합니다. 이후 onreadystatechange 이벤트를 등록하여 
+서버 응답이 도착하면 콜백 함수를 실행합니다. 이때 readyState 프로퍼티가 4이고 status 프로퍼티가 200일 때, 
+서버 응답 데이터를 JavaScript 객체로 변환하고, 이를 화면에 표시합니다. 
+이 예시에서는 응답 데이터가 배열 형태로 전달되었으며, forEach 메서드를 사용하여 각각의 아이템을 
+리스트 아이템으로 생성하여 화면에 추가합니다.
 
 
-Fetch API는 JavaScript에서 제공하는 HTTP 요청을 보내고 응답을 받기 위한 API입니다. 기존에 많이 사용되던 XMLHttpRequest와 비교했을 때, 더욱 간결하고 직관적인 문법을 제공하며, Promise를 기반으로 비동기 처리를 지원합니다.
+Fetch API는 JavaScript에서 제공하는 HTTP 요청을 보내고 응답을 받기 위한 API입니다. 
+기존에 많이 사용되던 XMLHttpRequest와 비교했을 때, 더욱 간결하고 직관적인 문법을 제공하며, 
+Promise를 기반으로 비동기 처리를 지원합니다.
 
 Fetch API를 사용하여 서버와 통신하는 방법은 다음과 같습니다.
 
 ```javascript
+
 fetch(url)
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error(error));
+
 ```
 
-위 코드에서 fetch 함수를 호출하면 서버에 GET 요청을 보냅니다. fetch 함수는 Promise 객체를 반환하며, 이 Promise 객체는 서버 응답을 받으면 resolve되고, 오류가 발생하면 reject됩니다. 이후 Promise 체이닝을 통해 서버 응답을 처리합니다.
+위 코드에서 fetch 함수를 호출하면 서버에 GET 요청을 보냅니다. 
+fetch 함수는 Promise 객체를 반환하며, 이 Promise 객체는 서버 응답을 받으면 
+resolve되고, 오류가 발생하면 reject됩니다. 이
+후 Promise 체이닝을 통해 서버 응답을 처리합니다.
 
-첫 번째 then 메서드에서는 응답 데이터를 JSON 형태로 변환합니다. 이후 두 번째 then 메서드에서는 JSON 데이터를 출력합니다. catch 메서드에서는 오류가 발생하면 콘솔에 에러 메시지를 출력합니다.
+첫 번째 then 메서드에서는 응답 데이터를 JSON 형태로 변환합니다. 
+이후 두 번째 then 메서드에서는 JSON 데이터를 출력합니다. 
+catch 메서드에서는 오류가 발생하면 콘솔에 에러 메시지를 출력합니다.
 
 Fetch API를 사용하여 POST 요청을 보내는 방법은 다음과 같습니다.
 
 ```javascript
+
 const options = {
   method: 'POST',
   headers: {
@@ -764,25 +877,38 @@ fetch(url, options)
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error(error));
+
 ```
 
-위 코드에서는 options 객체를 생성하여 method, headers, body 등을 설정합니다. 이후 fetch 함수를 호출할 때, 두 번째 인수로 options 객체를 전달합니다. 이를 통해 서버로 POST 요청을 보냅니다. 이후 Promise 체이닝을 통해 서버 응답을 처리합니다.
+위 코드에서는 options 객체를 생성하여 method, headers, body 등을 설정합니다. 
+이후 fetch 함수를 호출할 때, 두 번째 인수로 options 객체를 전달합니다. 
+이를 통해 서버로 POST 요청을 보냅니다. 이후 Promise 체이닝을 통해 서버 응답을 처리합니다.
 
 
-자바스크립트 모듈화는 프로그램을 여러 개의 모듈로 분리하여 개발하는 방법입니다. 각 모듈은 독립적으로 작동할 수 있도록 설계되며, 다른 모듈과의 결합도를 낮추어 유지보수성과 재사용성을 높입니다. 이를 통해 대규모 어플리케이션 개발 시 생기는 복잡도와 관리의 어려움을 해결할 수 있습니다.
+자바스크립트 모듈화는 프로그램을 여러 개의 모듈로 분리하여 개발하는 방법입니다. 
+각 모듈은 독립적으로 작동할 수 있도록 설계되며, 다른 모듈과의 결합도를 낮추어 
+유지보수성과 재사용성을 높입니다. 이를 통해 대규모 어플리케이션 개발 시 생기는 복잡도와 
+관리의 어려움을 해결할 수 있습니다.
 
-ES6에서는 모듈을 지원합니다. 모듈은 파일 단위로 동작하며, 다른 파일에서 import하여 사용할 수 있습니다. 모듈을 사용하기 위해서는 해당 파일에서 export를 해주어야 하며, import하여 사용할 때는 해당 모듈의 경로를 정확히 지정해주어야 합니다.
+ES6에서는 모듈을 지원합니다. 모듈은 파일 단위로 동작하며, 
+다른 파일에서 import하여 사용할 수 있습니다. 모듈을 사용하기 위해서는 
+해당 파일에서 export를 해주어야 하며, import하여 사용할 때는 해당 모듈의 
+경로를 정확히 지정해주어야 합니다.
 
 예를 들어, 다음과 같이 모듈을 작성하고 export할 수 있습니다.
 
 ```javascript
+
 // math.js
+
 export const add = (a, b) => a + b;
 export const subtract = (a, b) => a - b;
 export const multiply = (a, b) => a * b;
+
 ```
 
-위 코드에서는 add, subtract, multiply 함수를 export하여 외부에서 사용할 수 있도록 했습니다. 이를 다른 파일에서 import하여 사용할 수 있습니다.
+위 코드에서는 add, subtract, multiply 함수를 export하여 
+외부에서 사용할 수 있도록 했습니다. 이를 다른 파일에서 import하여 사용할 수 있습니다.
 
 ```javascript
 // app.js
@@ -792,16 +918,22 @@ console.log(add(1, 2)); // 3
 console.log(subtract(5, 3)); // 2
 ```
 
-위 코드에서는 math.js 파일에서 export한 add, subtract 함수를 import하여 사용했습니다. 이를 통해 각 파일은 독립적으로 작동하면서도 다른 파일과의 협업이 가능해집니다.
+위 코드에서는 math.js 파일에서 export한 add, subtract 
+함수를 import하여 사용했습니다. 이를 통해 각 파일은 독립적으로 작동하면서도 
+다른 파일과의 협업이 가능해집니다.
 
 
-자바스크립트 모듈화 방식에는 CommonJS, AMD, ES6 모듈화 방식이 있습니다. 각 방식은 모듈을 작성하고 가져오는 방식에서 차이가 있습니다.
+자바스크립트 모듈화 방식에는 CommonJS, AMD, ES6 모듈화 방식이 있습니다. 
+각 방식은 모듈을 작성하고 가져오는 방식에서 차이가 있습니다.
 
 1. CommonJS
 
-CommonJS는 Node.js에서 사용되는 모듈화 방식입니다. 파일 단위로 모듈을 작성하며, require 함수를 사용하여 모듈을 가져옵니다. 모듈 내에서 변수를 정의하면, 해당 모듈 내에서만 사용할 수 있습니다. exports 객체를 사용하여 외부로 내보낼 함수나 객체를 정의합니다.
+CommonJS는 Node.js에서 사용되는 모듈화 방식입니다. 파일 단위로 모듈을 작성하며,
+ require 함수를 사용하여 모듈을 가져옵니다. 모듈 내에서 변수를 정의하면, 
+해당 모듈 내에서만 사용할 수 있습니다. exports 객체를 사용하여 외부로 내보낼 함수나 객체를 정의합니다.
 
 ```javascript
+
 // math.js
 const add = (a, b) => a + b;
 const subtract = (a, b) => a - b;
@@ -818,11 +950,14 @@ console.log(math.add(1, 2)); // 3
 console.log(math.subtract(5, 3)); // 2
 ```
 
-위 코드에서는 math.js 파일에서 exports 객체를 사용하여 add, subtract 함수를 내보내고, app.js 파일에서 require 함수를 사용하여 해당 모듈을 가져온 후 사용합니다.
+위 코드에서는 math.js 파일에서 exports 객체를 사용하여 add, subtract 함수를 내보내고, 
+app.js 파일에서 require 함수를 사용하여 해당 모듈을 가져온 후 사용합니다.
 
 2. AMD
 
-AMD(Asynchronous Module Definition)는 RequireJS에서 사용하는 모듈화 방식입니다. 모듈을 비동기적으로 가져올 수 있습니다. define 함수를 사용하여 모듈을 정의하고, require 함수를 사용하여 해당 모듈을 가져옵니다.
+AMD(Asynchronous Module Definition)는 RequireJS에서 사용하는 모듈화 방식입니다. 
+모듈을 비동기적으로 가져올 수 있습니다. define 함수를 사용하여 모듈을 정의하고, 
+require 함수를 사용하여 해당 모듈을 가져옵니다.
 
 ```javascript
 // math.js
@@ -845,11 +980,13 @@ require(['math'], function (math) {
 });
 ```
 
-위 코드에서는 math.js 파일에서 define 함수를 사용하여 모듈을 정의하고, app.js 파일에서 require 함수를 사용하여 해당 모듈을 가져온 후 사용합니다.
+위 코드에서는 math.js 파일에서 define 함수를 사용하여 모듈을 정의하고, app.js
+ 파일에서 require 함수를 사용하여 해당 모듈을 가져온 후 사용합니다.
 
 3. ES6
 
-ES6에서는 import와 export 키워드를 사용하여 모듈화를 지원합니다. 파일 단위로 모듈을 작성하며, 다른 모듈에서 import하여 사용할 수 있습니다.
+ES6에서는 import와 export 키워드를 사용하여 모듈화를 지원합니다. 
+파일 단위로 모듈을 작성하며, 다른 모듈에서 import하여 사용할 수 있습니다.
 
 ```javascript
 // math.js
@@ -867,15 +1004,24 @@ console.log(add(1, 2)); // 3
 console.log(subtract(5, 3)); // 2
 ```
 
-위 코드에서는 math.js 파일에서 export 키워드를 사용하여 add, subtract 함수를 외부로 내보내고, app.js 파일에서 import 키워드를 사용하여 해당 모듈을 가져온 후 사용합니다.
+위 코드에서는 math.js 파일에서 export 키워드를 사용하여 
+add, subtract 함수를 외부로 내보내고, app.js 파일에서 import 키워드를 
+사용하여 해당 모듈을 가져온 후 사용합니다.
 
-자바스크립트에서 모듈 패턴은 코드를 모듈화하고 캡슐화하는 방법 중 하나입니다. 이 패턴은 전역 네임스페이스에서 코드 충돌을 방지하고 코드의 재사용성과 유지 보수성을 높이는 데 도움이 됩니다.
 
-모듈 패턴은 일반적으로 익명 함수 내부에 비공개 함수와 변수를 선언하여 사용됩니다. 이를 통해 다른 파일에서 해당 함수와 변수에 직접 접근할 수 없으며, 외부에서는 모듈 인스턴스를 통해 해당 기능에 접근할 수 있습니다.
+자바스크립트에서 모듈 패턴은 코드를 모듈화하고 캡슐화하는 방법 중 하나입니다. 
+이 패턴은 전역 네임스페이스에서 코드 충돌을 방지하고 
+코드의 재사용성과 유지 보수성을 높이는 데 도움이 됩니다.
 
-예를 들어, 다음과 같은 모듈 패턴을 사용하여 전역 네임스페이스를 오염시키지 않고 변수와 함수를 캡슐화할 수 있습니다.
+모듈 패턴은 일반적으로 익명 함수 내부에 비공개 함수와 변수를 선언하여 사용됩니다. 
+이를 통해 다른 파일에서 해당 함수와 변수에 직접 접근할 수 없으며, 
+외부에서는 모듈 인스턴스를 통해 해당 기능에 접근할 수 있습니다.
+
+예를 들어, 다음과 같은 모듈 패턴을 사용하여 전역 네임스페이스를 
+오염시키지 않고 변수와 함수를 캡슐화할 수 있습니다.
 
 ```javascript
+
 var myModule = (function() {
   var privateVariable = 'Hello World';
 
@@ -891,13 +1037,17 @@ var myModule = (function() {
 })();
 
 myModule.publicFunction(); // "Hello World" 출력
+
 ```
 
-네임스페이스는 객체를 사용하여 코드를 모듈화하고 그룹화하는 또 다른 방법입니다. 이 방법은 모듈 패턴과 마찬가지로 전역 네임스페이스에서 코드 충돌을 방지하고 코드의 가독성과 유지 보수성을 높이는 데 도움이 됩니다.
+네임스페이스는 객체를 사용하여 코드를 모듈화하고 그룹화하는 
+또 다른 방법입니다. 이 방법은 모듈 패턴과 마찬가지로 전역 네임스페이스에서 
+코드 충돌을 방지하고 코드의 가독성과 유지 보수성을 높이는 데 도움이 됩니다.
 
 예를 들어, 다음과 같은 네임스페이스를 사용하여 코드를 그룹화할 수 있습니다.
 
 ```javascript
+
 var myNamespace = {
   myProperty: 'Hello World',
 
@@ -907,26 +1057,52 @@ var myNamespace = {
 };
 
 myNamespace.myMethod(); // "Hello World" 출력
+
 ```
 
-이 방식은 일반적으로 큰 애플리케이션에서 많이 사용되며, 여러 모듈을 그룹화하고 각 모듈을 서로 다른 네임스페이스에 배치하여 코드의 가독성을 높일 수 있습니다.
+이 방식은 일반적으로 큰 애플리케이션에서 많이 사용되며, 
+여러 모듈을 그룹화하고 각 모듈을 서로 다른 네임스페이스에 
+배치하여 코드의 가독성을 높일 수 있습니다.
 
 
-React는 Facebook에서 개발한 UI 라이브러리로, 사용자 인터페이스를 만들기 위한 도구를 제공합니다. React는 컴포넌트 기반의 접근 방식으로 UI를 구성합니다. 이러한 컴포넌트들을 조합하여 구성된 UI를 빠르게 구축하고 관리할 수 있습니다.
 
-React는 Virtual DOM이라는 개념을 사용하여 성능을 최적화합니다. Virtual DOM은 실제 DOM에 대한 추상화 계층을 제공하여, UI 변경 사항을 처리할 때마다 전체 DOM을 다시 렌더링하지 않고, 변경된 부분만 갱신합니다. 이로 인해 성능이 향상되고, 더 나은 사용자 경험을 제공할 수 있습니다.
+React는 Facebook에서 개발한 UI 라이브러리로, 사용자 인터페이스를 만들기 위한 도구를 제공합니다. 
+React는 컴포넌트 기반의 접근 방식으로 UI를 구성합니다. 
+이러한 컴포넌트들을 조합하여 구성된 UI를 빠르게 구축하고 관리할 수 있습니다.
 
-또한 React는 JSX라는 문법을 사용하여 컴포넌트를 작성합니다. JSX는 JavaScript를 확장한 문법으로, HTML과 비슷한 구문을 사용하여 UI를 작성할 수 있습니다. 이를 통해 UI 코드를 더욱 직관적이고 가독성 높게 작성할 수 있습니다.
+React는 Virtual DOM이라는 개념을 사용하여 성능을 최적화합니다. 
+Virtual DOM은 실제 DOM에 대한 추상화 계층을 제공하여, UI 변경 사항을 처리할 때마다 
+전체 DOM을 다시 렌더링하지 않고, 변경된 부분만 갱신합니다. 이로 인해 성능이 향상되고, 
+더 나은 사용자 경험을 제공할 수 있습니다.
 
-React는 다른 라이브러리나 프레임워크와 함께 사용할 수 있습니다. 예를 들어, Redux나 MobX 같은 상태 관리 라이브러리와 함께 사용하여 복잡한 애플리케이션에서 상태 관리를 용이하게 할 수 있습니다. 또한 React Native를 사용하면 React를 기반으로 모바일 애플리케이션을 개발할 수 있습니다.
+또한 React는 JSX라는 문법을 사용하여 컴포넌트를 작성합니다. 
+JSX는 JavaScript를 확장한 문법으로, HTML과 비슷한 구문을 사용하여 UI를 작성할 수 있습니다. 
+이를 통해 UI 코드를 더욱 직관적이고 가독성 높게 작성할 수 있습니다.
+
+React는 다른 라이브러리나 프레임워크와 함께 사용할 수 있습니다. 
+예를 들어, Redux나 MobX 같은 상태 관리 라이브러리와 함께 사용하여 
+복잡한 애플리케이션에서 상태 관리를 용이하게 할 수 있습니다. 
+또한 React Native를 사용하면 React를 기반으로 모바일 애플리케이션을 개발할 수 있습니다.
 
 
-Vue.js는 Evan You에 의해 개발된 프론트엔드 JavaScript 프레임워크입니다. Vue.js는 UI를 만들기 위한 컴포넌트 기반의 접근 방식을 채택하고 있으며, 가볍고 빠르게 동작하는 것이 특징입니다.
+Vue.js는 Evan You에 의해 개발된 프론트엔드 JavaScript 프레임워크입니다. 
+Vue.js는 UI를 만들기 위한 컴포넌트 기반의 접근 방식을 채택하고 있으며, 
+가볍고 빠르게 동작하는 것이 특징입니다.
 
-Vue.js는 React와 마찬가지로 Virtual DOM을 사용하여 UI를 렌더링하며, 변경된 부분만 갱신하므로 성능이 우수합니다. 또한 Vue.js는 React와 달리 JSX가 아닌 Template 문법을 사용하여 UI를 작성할 수 있습니다. Template 문법은 HTML과 유사한 구문을 사용하여 UI를 작성할 수 있으며, Vue.js는 이를 컴파일하여 Virtual DOM을 생성합니다.
+Vue.js는 React와 마찬가지로 Virtual DOM을 사용하여 UI를 렌더링하며, 
+변경된 부분만 갱신하므로 성능이 우수합니다. 또한 Vue.js는 React와 
+달리 JSX가 아닌 Template 문법을 사용하여 UI를 작성할 수 있습니다.
+ Template 문법은 HTML과 유사한 구문을 사용하여 UI를 작성할 수 있으며, 
+Vue.js는 이를 컴파일하여 Virtual DOM을 생성합니다.
 
-Vue.js는 리액트와 마찬가지로 상태 관리를 위한 라이브러리와 함께 사용할 수 있습니다. Vuex는 Vue.js에서 사용하는 상태 관리 라이브러리로, 중앙 집중식 저장소와 상태 변경 이벤트를 사용하여 애플리케이션 상태를 관리합니다.
+Vue.js는 리액트와 마찬가지로 상태 관리를 위한 라이브러리와 함께 사용할 수 있습니다. 
+Vuex는 Vue.js에서 사용하는 상태 관리 라이브러리로, 중앙 집중식 저장소와 상태 변경 
+이벤트를 사용하여 애플리케이션 상태를 관리합니다.
 
-또한 Vue.js는 다른 라이브러리나 프레임워크와도 쉽게 통합될 수 있습니다. 예를 들어, Vue.js를 사용하여 웹 페이지를 구축하면서, D3.js 같은 시각화 라이브러리와도 쉽게 통합하여 사용할 수 있습니다.
+또한 Vue.js는 다른 라이브러리나 프레임워크와도 쉽게 통합될 수 있습니다. 
+예를 들어, Vue.js를 사용하여 웹 페이지를 구축하면서, D3.js 같은 시각화 라이브러리와도 
+쉽게 통합하여 사용할 수 있습니다.
 
-Vue.js의 장점으로는 가볍고 빠른 속도, 간결한 문법, 다양한 확장성, 쉬운 템플릿 문법 등이 있습니다. 또한 Vue.js는 React와 마찬가지로 커뮤니티가 활발하며, 다양한 오픈소스 라이브러리와 플러그인을 제공합니다.
+Vue.js의 장점으로는 가볍고 빠른 속도, 간결한 문법, 다양한 확장성, 쉬운 템플릿 문법 등이 있습니다.
+ 또한 Vue.js는 React와 마찬가지로 커뮤니티가 활발하며, 
+다양한 오픈소스 라이브러리와 플러그인을 제공합니다.
