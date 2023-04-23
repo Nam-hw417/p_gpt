@@ -1,0 +1,35 @@
+
+
+<Strategiest>
+
+1. Stragy
+
+> Question
+> Problems
+> Solution
+
+2. Demand
+
+> Viewpoint
+> STP-4P(4S)
+> Hypothesis - Experiment
+
+3. Supply
+
+> Knowledge
+> Coding
+> Data
+
+4. Supportive: ChatGPT
+
+* 무엇을 입력값으로 받을까?
+> 이메일주소, 이름, 기업명, 홈페이지주소
+
+* 영문입력
+> 필수: 상품명, 상품상세설명, 국가
+> 옵션:  HSCODE, 해외기업에 대한 희망사항
+
+* 무엇을 출력값으로 줄까? (10개)
+> 해외기업명, 홈페이지 주소
+
+ 
