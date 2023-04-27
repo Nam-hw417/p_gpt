@@ -871,3 +871,132 @@ def login():
             flash('Invalid username or password')
             return redirect(url_for('auth.login'))
        
+       
+       
+       
+코드 샘플을 보여드리겠습니다.
+
+1. app/__init__.py
+
+```python
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from flask_login import LoginManager
+from app.auth.routes import auth_bp
+
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'my-secret-key'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+db = SQLAlchemy(app)
+login_manager = LoginManager(app)
+login_manager.login_view = 'auth.login'
+
+app.register_blueprint(auth_bp)
+
+from app import routes, models
+```
+
+2. app/auth/__init__.py
+
+```python
+from flask import Blueprint
+
+auth_bp = Blueprint('auth', __name__, template_folder='templates')
+
+from app.auth import routes
+```
+
+3. app/auth/forms.py
+
+```python
+from flask_wtf import FlaskForm
+from wtforms import StringField, PasswordField, SubmitField
+from wtforms.validators import DataRequired, Email, EqualTo
+
+
+class LoginForm(FlaskForm):
+    email = StringField('Email', validators=[DataRequired(), Email()])
+    password = PasswordField('Password', validators=[DataRequired()])
+    submit = SubmitField('Login')
+
+
+class RegistrationForm(FlaskForm):
+    email = StringField('Email', validators=[DataRequired(), Email()])
+    password = PasswordField('Password', validators=[DataRequired()])
+    confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
+    submit = SubmitField('Register')
+```
+
+4. app/auth/routes.py
+
+```python
+from flask import render_template, redirect, url_for
+from flask_login import login_user, logout_user, login_required
+from app.auth.forms import LoginForm, RegistrationForm
+from app.auth import auth_bp
+from app.models import User
+
+
+@auth_bp.route('/login', methods=['GET', 'POST'])
+def login():
+    form = LoginForm()
+    if form.validate_on_submit():
+        user = User.query.filter_by(email=form.email.data).first()
+        if user and user.check_password(form.password.data):
+            login_user(user)
+            return redirect(url_for('index'))
+    return render_template('auth/login.html', form=form)
+
+
+@auth_bp.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for('index'))
+
+
+@auth_bp.route('/register', methods=['GET', 'POST'])
+def register():
+    form = RegistrationForm()
+    if form.validate_on_submit():
+        user = User(email=form.email.data)
+        user.set_password(form.password.data)
+        db.session.add(user)
+        db.session.commit()
+        login_user(user)
+        return redirect(url_for('index'))
+    return render_template('auth/register.html', form=form)
+```
+
+5. app/auth/templates/login.html
+
+```html
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Login</h1>
+  <form method="POST" action="{{ url_for('auth.login') }}">
+    {{ form.hidden_tag() }}
+    {{ form.email.label }} {{ form.email() }}
+    {{ form.password.label }} {{ form.password() }}
+    {{ form.submit() }}
+  </form>
+{% endblock %}
+```
+
+6. app/auth/templates/register.html
+
+```html
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Register</h1>
+  <form method="POST" action="{{ url_for('auth.register') }}">
+    {{ form.hidden_tag() }}
+    {{ form.email.label }} {{ form.email() }}
+    {{ form.password.label }} {{ form.password() }}
+    {{ form.confirm_password.label }} {{ form.confirm_password() }}
+    {{ form.submit() }}
+  </form>
+{% endblock %}
+```
